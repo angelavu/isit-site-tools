@@ -4,7 +4,7 @@
 
 const elfConfig = require('isit-code-vu').elfConfig;
 const elfUtils = require('isit-code-vu').elfUtils;
-// const elfLog = require('isit-code-calvert').elfLog('config-settings');
+// const elfLog = require('isit-code-vu').elfLog('config-settings');
 elfConfig.useLocalConfig = true;
 
 function ConfigSettings() {

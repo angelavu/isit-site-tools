@@ -1,6 +1,6 @@
 const CreateSmallImage = (function() {
     const sharp = require('sharp');
-    //const elfUtils = require('isit-code-calvert').elfUtils;
+    //const elfUtils = require('isit-code-vu').elfUtils;
     const siteUtils = require('../../utilities');
     const elfLog = require('isit-code-vu').elfLog('make-report');
     // const dateDir = '';
