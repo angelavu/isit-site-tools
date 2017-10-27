@@ -2,8 +2,8 @@
  * Created by charlie on 7/21/16.
  */
 
-const elfConfig = require('isit-code-calvert').elfConfig;
-const elfUtils = require('isit-code-calvert').elfUtils;
+const elfConfig = require('isit-code-vu').elfConfig;
+const elfUtils = require('isit-code-vu').elfUtils;
 // const elfLog = require('isit-code-calvert').elfLog('config-settings');
 elfConfig.useLocalConfig = true;
 

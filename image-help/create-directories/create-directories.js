@@ -3,9 +3,9 @@
  */
 
 const utilities = require('../utilities');
-const walker = require('isit-code-calvert').walker;
-const elfLog = require('isit-code-calvert').elfLog('create-directories');
-const elfUtils = require('isit-code-calvert').elfUtils;
+const walker = require('isit-code-vu').walker;
+const elfLog = require('isit-code-vu').elfLog('create-directories');
+const elfUtils = require('isit-code-vu').elfUtils;
 const mkdirp = require('mkdirp');
 const fs = require('fs');
 

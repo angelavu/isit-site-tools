@@ -6,7 +6,7 @@ const CheckMarkdown = (function() {
     'use strict';
 
     const configSettings = require('./config-settings');
-    const elfConfig = require('isit-code-calvert').elfConfig;
+    const elfConfig = require('isit-code-vu').elfConfig;
     //const PythonShell = require('python-shell');
     const findDuplicateKeys = require('./find-duplicate-keys');
     //const elfLog = require('isit-code-calvert').elfLog('check-markdown');
