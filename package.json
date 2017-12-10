@@ -1,6 +1,6 @@
 {
     "name": "isit-site-tools-vu",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Isit tooling for building web sites",
     "main": "index.js",
     "scripts": {
