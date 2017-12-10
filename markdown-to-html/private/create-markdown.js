@@ -31,7 +31,7 @@ function pageMaker(details, configSummary, destinationDir) {
     return new Promise(function(resolve, reject) {
         walkCore.makePage(details, function(masterListOfNames, htmlFilesWritten) {
             const report = makeReportStructure(configSummary, destinationDir, details, masterListOfNames, htmlFilesWritten);
-            const reportName = 'RunReport.txt';
+            const reportName = destinationDir + 'RunReport.txt';
             utils.writeFile(reportName, JSON.stringify(report, null, 4), function() {
                 elfLog.info('Wrote report to: ', reportName);
                 resolve(report);
@@ -44,6 +44,10 @@ module.exports = function (configSummary, directoryIndex) {
     'use strict';
     return new Promise(function(resolve, reject) {
         elfLog.setLevel(elfLog.logLevelNano);
+        if (directoryIndex > configSummary['site-dirs'].length) {
+            console.log(configSummary['site-dirs']);
+            throw new Error('Index invalid for site-dirs. Are you using the right ElvenwareConfig file?');
+        }
         const directoryToWalk = configSummary['base-dir'] + configSummary['site-dirs'][directoryIndex];
         const destinationDir = configSummary['destination-dirs'][directoryIndex];
         const mostRecentDate = configSummary['most-recent-date'];
